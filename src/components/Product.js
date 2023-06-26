@@ -9,7 +9,7 @@ const Product = () => {
     fetch("https://fakestoreapi.com/products")
       .then((data) => data.json())
       .then((result) => {
-        console.log(result);
+        // console.log(result);
         getProducts(result);
       });
   }, []);
