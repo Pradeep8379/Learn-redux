@@ -1,0 +1,45 @@
+table {
+  overflow: auto;
+  min-width: 2000px;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin-top: 31px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+thead th {
+  background-color: #f2f2f2;
+  position: sticky;
+  top: 54px;
+}
+
+td img {
+  height: 60px;
+  width: 60px;
+  transition: transform 1s;
+}
+
+td img:hover {
+  transform: scale(2);
+}
+
+th span {
+  display: flex;
+  cursor: pointer;
+  width: 90px;
+  justify-content: space-evenly;
+}
+
+tbody.animated-rows tr {
+  transition: background-color 0.3s ease-in-out;
+}
+
+tbody.animated-rows tr:hover {
+  background-color: #f5f5f5;
+}

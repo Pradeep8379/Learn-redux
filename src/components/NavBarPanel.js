@@ -8,13 +8,16 @@ import { useSelector } from "react-redux";
 function NavBarPanel() {
   const cartProducts = useSelector(state=> state.cart)
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary" style={{position:'fixed',top:'0',left:'0',width:'100%',zIndex:'1'}}>
       <Container fluid>
         <Navbar.Brand href="#">Redux Toolkit</Navbar.Brand>
 
         <Nav>
           <Nav.Link to="/" as={Link}>
             Products
+          </Nav.Link>
+          <Nav.Link to="/producttable" as={Link}>
+            Products Table
           </Nav.Link>
         </Nav>
         <Navbar.Toggle />

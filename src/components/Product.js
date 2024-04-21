@@ -12,7 +12,7 @@ const Product = () => {
   useEffect(() => {
     // dispatch fetch product
     dispatch(getProducts());
-  }, []);
+  }, [dispatch]);
   if(status===statusCodes.Loading){
     return<h1>Loading...</h1>
   }
@@ -58,7 +58,7 @@ const Product = () => {
 
   return (
     <>
-      <div className="row">{cards}</div>
+      <div className="row" style={{marginTop:'57px',}}>{cards}</div>
     </>
   );
 };
